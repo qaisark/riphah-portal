@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    tools:context=".AskNow">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvheadasknow"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="ASK QUESTION"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="title"
+        android:gravity="left"
+        android:id="@+id/edituname"
+        android:layout_below="@id/tvheadasknow"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:lines="2"
+        android:maxLines="4"
+        android:inputType="textMultiLine"/>
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tags: C++, Java, Android..."
+        android:gravity="left"
+        android:id="@+id/editedu"
+        android:layout_below="@+id/edituname"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textMultiLine"/>
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="question details.."
+        android:gravity="left"
+        android:id="@+id/editskills"
+        android:layout_below="@+id/editedu"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:lines="8"
+        android:maxLines="8"
+        android:inputType="textMultiLine"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Ask Now"
+        android:id="@+id/asknowbtnn"
+        android:layout_below="@id/editskills"
+        android:layout_marginTop="20dp"/>
+
+
+</RelativeLayout>
